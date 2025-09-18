@@ -14,7 +14,7 @@ function createHearts() {
     const book = document.querySelector(".book-scene");
     const rect = book.getBoundingClientRect();
 
-    for (let i = 0; i < 120; i++) {
+    for (let i = 0; i < 150; i++) {
         let heart = document.createElement("div");
         heart.innerHTML = emojis[Math.floor(Math.random()*emojis.length)];
         heart.classList.add("heart");
@@ -52,5 +52,6 @@ function createHearts() {
         container.appendChild(heart);
     }
 }
+
 
 createHearts();
